@@ -14,6 +14,19 @@ public class Price implements Serializable {
     private Date end;
     private Long value;
 
+    @Override
+    public String toString() {
+        return "Price{" +
+                "id=" + id +
+                ", productCode='" + productCode + '\'' +
+                ", number=" + number +
+                ", depart=" + depart +
+                ", begin=" + begin +
+                ", end=" + end +
+                ", value=" + value +
+                '}';
+    }
+
     public Price() {
 
     }
